@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Travel Agency</title>
+  <style>
+    /* Base Reset & Colors */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    /* Floating Motion Animations */
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 8px #38bdf8; }
+      50% { box-shadow: 0 0 18px #38bdf8; }
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      animation: floatUp 3s infinite ease-in-out;
+    }
+
+    .btn-nav {
+      background: #0284c7;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      animation: floatUp 2.8s infinite ease-in-out, pulseGlow 2s infinite ease-in-out;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #1e293b;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 15px;
+      border: 1px solid #334155;
+      animation: floatUp 3.5s infinite ease-in-out;
+    }
+
+    .hero h1 {
+      color: #38bdf8;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .btn-hero {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      animation: pulseGlow 2.5s infinite ease-in-out;
+    }
+
+    /* Card List */
+    .cards-container {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #ffffff;
+      animation: floatUp 3.2s infinite ease-in-out;
+    }
+
+    .card-info h3 {
+      font-size: 15px;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+
+    .card-info p {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .price-badge {
+      background: #0284c7;
+      color: #ffffff;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    /* Booking Form Section */
+    .booking-box {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      margin-bottom: 15px;
+      animation: floatUp 4s infinite ease-in-out;
+    }
+
+    .booking-box h2 {
+      font-size: 16px;
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 13px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 5px;
+      animation: pulseGlow 2.2s infinite ease-in-out;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="https://www.google.com/travel" target="_blank" class="logo">WANDERLUST</a>
+    <a href="https://www.google.com/travel/flights" target="_blank" class="btn-nav">BOOK NOW</a>
+  </nav>
+
+  <section class="hero">
+    <h1>EXPLORE THE WORLD</h1>
+    <p>Discover flights, luxury resorts, and custom holiday packages.</p>
+    <a href="https://www.google.com/travel" target="_blank" class="btn-hero">FIND DEALS</a>
+  </section>
+
+  <main class="cards-container">
+    
+    <a href="https://www.google.com/travel/explore?q=Paris" target="_blank" class="card">
+      <div class="card-info">
+        <h3>Paris, France</h3>
+        <p>City of lights & Eiffel Tower tours.</p>
+      </div>
+      <span class="price-badge">$799</span>
+    </a>
+
+    <a href="https://www.google.com/travel/explore?q=Maldives" target="_blank" class="card">
+      <div class="card-info">
+        <h3>Maldives Islands</h3>
+        <p>Tropical beach resorts & ocean views.</p>
+      </div>
+      <span class="price-badge">$1,199</span>
+    </a>
+
+    <a href="https://www.google.com/travel/explore?q=Tokyo" target="_blank" class="card">
+      <div class="card-info">
+        <h3>Tokyo, Japan</h3>
+        <p>Modern sights & rich cultural history.</p>
+      </div>
+      <span class="price-badge">$999</span>
+    </a>
+
+  </main>
+
+  <section class="booking-box">
+    <h2>Search Flights</h2>
+    <form action="https://www.google.com/travel/flights" method="get" target="_blank">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" name="q" placeholder="Where to?" required>
+      </div>
+      <button type="submit" class="btn-submit">Search</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© Wanderlust Agency. <a href="https://www.google.com/travel" target="_blank">Google Travel</a></p>
+  </footer>
+
+</body>
+</html>
